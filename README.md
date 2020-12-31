@@ -17,3 +17,7 @@ blend | how much to blend different regions
 
 ### Execution
 Run index.js. An image called out.png will be created in the current directory.
+
+### Sample Image
+![Image of Yaktocat](/images/example.png)
+Generated using default settings
