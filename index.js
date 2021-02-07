@@ -19,7 +19,7 @@ for (let x = 0; x < xDensity + 4; x++) {
 }
 //displays the dots
 for (x in dots) {
-    for (y in dots) {
+    for (y in dots[x]) {
         ctx.fillStyle = hexRgb(settings.colors[Math.round(Math.min((parseInt(x) + parseInt(y)) / (xDensity + yDensity) + Math.random() * settings.blend, 1) * (settings.colors.length - 1))], { format: 'css' });
         ctx.strokeStyle = ctx.fillStyle
         if (dots[parseInt(x)][parseInt(y) + 1] != undefined && dots[parseInt(x) + 1] != undefined) {
